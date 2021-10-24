@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Dropin Maps</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    
+    </head>
+    <body>
+        <img src="dropin.PNG">
+        <div id='map' style='width: 80%; height: 900px; align-items: center;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1Ijoiam9zaGNhcnJhc2NvNSIsImEiOiJja3R5dWJ0c2UweTBmMnV0aHpmN2oxZXc3In0.t3TXnzl3svwGHo7vTK7vIw';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/joshcarrasco5/cktzbuhc52tok18piqopoinf6'
+                });
+            </script>
+    </body>
+</html>

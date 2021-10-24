@@ -2,8 +2,23 @@
 <html>
     <head> 
         <title> Dropin Maps</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="map.js"></script>
+        
     </head>
     <body>
-        <h1>Dropin Maps</h1>
+        <img src="dropin.PNG">
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <input type="text" placeholder="Search..">
+        </div>
+        <div id="map"></div>
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ0UDtUyk4ew_DXQZ9_TFwvoP-FyHC6s8&callback=initMap&libraries=&v=weekly"> 
+        </script>
     </body>
 </html>
